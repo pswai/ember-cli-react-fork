@@ -34,6 +34,7 @@
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
+    "broccoli-funnel": "^2.0.1",
     "ember-ajax": "^3.0.0",
     "ember-browserify": "^1.1.7",
     "ember-cli": "~2.15.1",
@@ -62,7 +63,9 @@
     "loader.js": "^4.2.3",
     "prettier": "^1.9.2",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "semantic-ui-css": "^2.3.2",
+    "semantic-ui-react": "^0.81.3"
   },
   "dependencies": {
     "bower": "^1.8.2",
