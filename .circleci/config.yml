@@ -144,6 +144,42 @@ jobs:
           name: Run Tests
           command: ./node_modules/.bin/ember try:one ember-3.6 --skip-cleanup=true
 
+  test_lts_3_8:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: .
+      - run:
+          name: Run Tests
+          command: ./node_modules/.bin/ember try:one ember-lts-3.8 --skip-cleanup=true
+
+  test_lts_3_12:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: .
+      - run:
+          name: Run Tests
+          command: ./node_modules/.bin/ember try:one ember-lts-3.12 --skip-cleanup=true
+
+  test_octance_3_13:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: .
+      - run:
+          name: Run Tests
+          command: ./node_modules/.bin/ember try:one ember-octane-3.13 --skip-cleanup=true
+
+  test_octance_3_14:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: .
+      - run:
+          name: Run Tests
+          command: ./node_modules/.bin/ember try:one ember-octane-3.14 --skip-cleanup=true
+
   test_release:
     <<: *defaults
     steps:
@@ -210,6 +246,18 @@ workflows:
           requires:
             - setup_environment
       - test_3_6:
+          requires:
+            - setup_environment
+      - test_lts_3_8:
+          requires:
+            - setup_environment
+      - test_lts_3_12:
+          requires:
+            - setup_environment
+      - test_octane_3_13:
+          requires:
+            - setup_environment
+      - test_octane_3_14:
           requires:
             - setup_environment
       - test_release:
