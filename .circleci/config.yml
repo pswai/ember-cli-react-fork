@@ -162,7 +162,7 @@ jobs:
           name: Run Tests
           command: ./node_modules/.bin/ember try:one ember-lts-3.12 --skip-cleanup=true
 
-  test_octance_3_13:
+  test_octane_3_13:
     <<: *defaults
     steps:
       - attach_workspace:
@@ -171,7 +171,7 @@ jobs:
           name: Run Tests
           command: ./node_modules/.bin/ember try:one ember-octane-3.13 --skip-cleanup=true
 
-  test_octance_3_14:
+  test_octane_3_14:
     <<: *defaults
     steps:
       - attach_workspace:
