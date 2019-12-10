@@ -107,6 +107,38 @@ module.exports = {
       },
     },
     {
+      name: 'ember-lts-3.8',
+      npm: {
+        devDependencies: {
+          'ember-source': '~3.8.0',
+        },
+      },
+    },
+    {
+      name: 'ember-lts-3.12',
+      npm: {
+        devDependencies: {
+          'ember-source': '~3.12.0',
+        },
+      },
+    },
+    {
+      name: 'ember-octane-3.13',
+      npm: {
+        devDependencies: {
+          'ember-source': '~3.13.0',
+        },
+      },
+    },
+    {
+      name: 'ember-octane-3.14',
+      npm: {
+        devDependencies: {
+          'ember-source': '~3.14.0',
+        },
+      },
+    },
+    {
       name: 'ember-release',
       bower: {
         dependencies: {
