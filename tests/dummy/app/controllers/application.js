@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import { set } from '@ember/object';
 
 export default Ember.Controller.extend({
   completedTodos: Ember.computed.filterBy('model', 'isComplete'),
@@ -6,7 +7,7 @@ export default Ember.Controller.extend({
   onToggle(todoId) {
     let todos = this.get('model').map(todo => {
       if (todo.id === todoId) {
-        todo.isComplete = !todo.isComplete;
+        set(todo, 'isComplete', !todo.isComplete);
       }
 
       return todo;
@@ -18,7 +19,7 @@ export default Ember.Controller.extend({
   actions: {
     resetAll() {
       const updated = this.get('model').map(todo => {
-        todo.isComplete = false;
+        set(todo, 'isComplete', false);
         return todo;
       });
       this.set('model', updated);
