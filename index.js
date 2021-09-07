@@ -1,4 +1,3 @@
-/* eslint-env node */
 'use strict';
 
 const babel = require('broccoli-babel-transpiler');
