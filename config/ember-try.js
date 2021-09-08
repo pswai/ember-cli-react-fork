@@ -195,6 +195,7 @@ module.exports = function() {
         },
         {
           name: 'ember-release',
+          allowedToFail: true,
           npm: {
             devDependencies: {
               'ember-source': urls[0],
@@ -203,6 +204,7 @@ module.exports = function() {
         },
         {
           name: 'ember-beta',
+          allowedToFail: true,
           npm: {
             devDependencies: {
               'ember-source': urls[1],
@@ -211,6 +213,7 @@ module.exports = function() {
         },
         {
           name: 'ember-canary',
+          allowedToFail: true,
           npm: {
             devDependencies: {
               'ember-source': urls[2],
