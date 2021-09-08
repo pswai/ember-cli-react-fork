@@ -311,6 +311,15 @@ workflows:
       - test_lts_3_16:
           requires:
             - setup_environment
+      - test_lts_3_20:
+          requires:
+            - setup_environment
+      - test_lts_3_24:
+          requires:
+            - setup_environment
+      - test_lts_3_28:
+          requires:
+            - setup_environment
       - test_release:
           requires:
             - setup_environment
