@@ -323,9 +323,9 @@ workflows:
       - test_release:
           requires:
             - setup_environment
-      - test_beta:
-          requires:
-            - setup_environment
-      - test_canary:
-          requires:
-            - setup_environment
+      # - test_beta:
+      #     requires:
+      #       - setup_environment
+      # - test_canary:
+      #     requires:
+      #       - setup_environment
