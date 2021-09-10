@@ -23,7 +23,7 @@ const candidates = [
     extract: extractGlimmer,
   },
   {
-    // > 2.10.0
+    // >= 2.10.0 (Glimmer)
     path: 'ember-views/compat/attrs',
     extract: extractGlimmer,
   },
