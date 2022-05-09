@@ -1,5 +1,8 @@
 ## [Unreleased]
 
+- **Breaking change:** Rename addon to `ember-cli-react-fork` to fix the name mismatch error in Ember CLI. More info at https://github.com/ember-cli/ember-cli/pull/7950.
+- **Breaking change:** Blueprint no longer generates `app/resolver.js`. Import resolver from `ember-cli-react-fork/resolver` directly.
+
 ## [2.0.1] - 2021-09-11
 
 - Try importing Ember internals one by one instead of using hardcoded version number.

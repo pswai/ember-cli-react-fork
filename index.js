@@ -3,7 +3,7 @@
 const babel = require('broccoli-babel-transpiler');
 
 module.exports = {
-  name: 'ember-cli-react',
+  name: 'ember-cli-react-fork',
 
   preprocessTree: function(type, tree) {
     if (type === 'js') {

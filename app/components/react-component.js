@@ -1,1 +1,1 @@
-export { default } from 'ember-cli-react/components/react-component';
+export { default } from 'ember-cli-react-fork/components/react-component';

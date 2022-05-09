@@ -18,13 +18,17 @@ yarn add --dev ember-cli-react-fork
 npm i -D ember-cli-react-fork
 
 # This triggers addon blueprint to do necessary setup
-ember generate ember-cli-react
+ember generate ember-cli-react-fork
 ```
 
-**NOTE**: `ember-cli-react` relies on a custom resolver to discover components.
-If you have installed `ember-cli-react` with the standard way then you should be
-fine. Otherwise, you will need to manually update the first line of
-`app/resolver.js` to `import Resolver from 'ember-cli-react/resolver';`.
+Then update your app to use `ember-cli-react-fork/resolver` instead of the default resolver.
+
+```diff
+// For newer Ember apps, update this line in `app.js`.
+// For older Ember apps, update `app/resolver.js` instead.
+- import Resolver from 'ember-resolver';
++ import Resolver from 'ember-cli-react-fork/resolver';
+```
 
 <details><summary><strong>Upgrading to 1.0</strong></summary>
 <p>
@@ -35,7 +39,7 @@ to 1.0, there are several steps you need to take:
 
 1.  Remove `ember-browserify` from your project's `package.json` (if no other
     addon is using).
-2.  Install latest `ember-cli-react` and make sure blueprint is run `ember generate ember-cli-react`.
+2.  Install latest `ember-cli-react-fork` and make sure blueprint is run `ember generate ember-cli-react-fork`.
 3.  Remove `npm:` prefix from all import statements.
 
 Then you should be good to go :)
@@ -62,7 +66,7 @@ Then render your component in a handlebars template:
 {{say-hi name="Alex"}}
 ```
 
-**NOTE**: Currently, `ember-cli-react` recognizes React components with `.jsx`
+**NOTE**: Currently, `ember-cli-react-fork` recognizes React components with `.jsx`
 extension only.
 
 ## Block Form

@@ -7,9 +7,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import YieldWrapper from './react-component/yield-wrapper';
 
-import getMutableAttributes from 'ember-cli-react/utils/get-mutable-attributes';
-import hasBlock from 'ember-cli-react/utils/has-block';
-import lookupFactory from 'ember-cli-react/utils/lookup-factory';
+import getMutableAttributes from 'ember-cli-react-fork/utils/get-mutable-attributes';
+import hasBlock from 'ember-cli-react-fork/utils/has-block';
+import lookupFactory from 'ember-cli-react-fork/utils/lookup-factory';
 
 const ReactComponent = Component.extend({
   /**
